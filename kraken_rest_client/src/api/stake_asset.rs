@@ -37,6 +37,7 @@ pub struct StakeAssetResponse {
 }
 
 impl Client {
+    #[deprecated]
     pub fn stake_asset(
         &self,
         asset: impl Into<String>,

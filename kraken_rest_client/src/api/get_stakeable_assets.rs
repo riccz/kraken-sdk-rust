@@ -42,6 +42,7 @@ pub struct StakeableAsset {
 pub type GetStakeableAssetsResponse = Vec<StakeableAsset>;
 
 impl Client {
+    #[deprecated]
     pub fn get_stakeable_assets(&self) -> GetStakeableAssetsRequest {
         GetStakeableAssetsRequest {
             client: self.clone(),

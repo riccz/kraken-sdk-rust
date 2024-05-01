@@ -32,6 +32,7 @@ pub struct UnstakeAssetResponse {
 }
 
 impl Client {
+    #[deprecated]
     pub fn unstake_asset(&self, asset: impl Into<String>, amount: &str) -> UnstakeAssetRequest {
         UnstakeAssetRequest {
             client: self.clone(),
