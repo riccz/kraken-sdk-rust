@@ -37,6 +37,9 @@ pub use get_deposit_methods::*;
 pub mod get_deposit_status;
 pub use get_deposit_status::*;
 
+pub mod get_extended_balance;
+pub use get_extended_balance::*;
+
 pub mod get_withdrawal_addresses;
 pub use get_withdrawal_addresses::*;
 
